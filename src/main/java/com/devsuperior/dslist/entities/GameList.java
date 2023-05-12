@@ -9,14 +9,14 @@ public class GameList {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
+    private String name;
 
     public GameList() {
     }
 
-    public GameList(Long id, String title) {
+    public GameList(Long id, String name) {
         this.id = id;
-        this.title = title;
+        this.name = name;
     }
 
     public Long getId() {
@@ -28,10 +28,10 @@ public class GameList {
     }
 
     public String getTitle() {
-        return title;
+        return name;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.name = title;
     }
 }
